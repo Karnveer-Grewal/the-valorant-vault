@@ -1,5 +1,45 @@
+/* Universal Styling */
+:root {
+  --primaryRed: #ff6b6b;
+  --primaryWhite: #f4f4ed;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Header Styling */
+.header-container {
+  background-color: var(--primaryRed);
+  color: var(--primaryWhite);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-family: 'Righteous', cursive;
+  letter-spacing: 2px;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+/*Header Nav Styling */
+.header-nav ul {
+  display: flex;
+  font-family: 'Kanit', sans-serif;
+}
+
+.header-nav ul li {
+  list-style: none;
+  margin-left: 5px;
+}
+
+.header-nav ul li a {
+  color: var(--primaryWhite);
+  text-decoration: none;
+  font-size: 0.7em;
 }

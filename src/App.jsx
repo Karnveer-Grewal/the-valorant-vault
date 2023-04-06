@@ -1,8 +1,14 @@
+import Header from './components/Header';
+import { BrowserRouter } from 'react-router-dom';
+import './index.css';
+
 const App = () => {
   return (
-    <div className='App'>
-      <h1>Valorant Vault</h1>
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <Header />
+      </div>
+    </BrowserRouter>
   );
 };
 
