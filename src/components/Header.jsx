@@ -7,16 +7,16 @@ const Header = () => {
       <nav className='header-nav'>
         <ul>
           <li>
-            <Link>Home</Link>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link>Agents</Link>
+            <Link to='/agents'>Agents</Link>
           </li>
           <li>
-            <Link>Maps</Link>
+            <Link to='/maps'>Maps</Link>
           </li>
           <li>
-            <Link>Weapons</Link>
+            <Link to='/weapons'>Weapons</Link>
           </li>
         </ul>
       </nav>
