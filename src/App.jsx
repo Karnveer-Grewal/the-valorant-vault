@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Agents from './pages/Agents';
 import Maps from './pages/Maps';
 import Weapons from './pages/Weapons';
+import AgentContextProvider from './contexts/AgentsContext';
 import './index.css';
 
 const App = () => {
@@ -13,7 +14,14 @@ const App = () => {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/agents' element={<Agents />} />
+          <Route
+            path='/agents'
+            element={
+              <AgentContextProvider>
+                <Agents />
+              </AgentContextProvider>
+            }
+          />
           <Route path='/maps' element={<Maps />} />
           <Route path='/weapons' element={<Weapons />} />
         </Routes>

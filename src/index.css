@@ -2,6 +2,7 @@
 :root {
   --primaryRed: #ff6b6b;
   --primaryWhite: #f4f4ed;
+  --primaryGray: #daddd8;
 }
 
 * {
@@ -42,4 +43,46 @@
   color: var(--primaryWhite);
   text-decoration: none;
   font-size: 0.7em;
+}
+
+/* Agent List Styling */
+.agents-container {
+  font-family: 'Kanit', sans-serif;
+  padding: 10px;
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+}
+
+.agents-item {
+  padding: 10px;
+  background-color: var(--primaryGray);
+  margin: 10px;
+  flex: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.agents-item-img {
+  width: 90px;
+}
+
+.agents-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.agents-item-content p {
+  font-size: 0.8em;
+}
+
+.agents-item-content img {
+  margin-left: 5px;
+  width: 15px;
 }

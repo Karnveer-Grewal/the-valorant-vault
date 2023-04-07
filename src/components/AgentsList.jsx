@@ -1,0 +1,14 @@
+const AgentsList = (props) => {
+  const { displayIcon, displayName, role } = props;
+  return (
+    <div className='agents-item'>
+      <img src={displayIcon} alt={displayName} className='agents-item-img' />
+      <h2 className='agents-item-heading'>{displayName}</h2>
+      <div className='agents-item-content'>
+        <p>{role.displayName}</p>
+        <img src={role.displayIcon} alt={role.displayName} />
+      </div>
+    </div>
+  );
+};
+export default AgentsList;
