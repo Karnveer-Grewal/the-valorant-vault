@@ -10,7 +10,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: 'Kanit', sans-serif;
+}
 /* Header Styling */
 .header-container {
   background-color: var(--primaryRed);
@@ -31,7 +33,6 @@
 /*Header Nav Styling */
 .header-nav ul {
   display: flex;
-  font-family: 'Kanit', sans-serif;
 }
 
 .header-nav ul li {
@@ -45,9 +46,36 @@
   font-size: 0.7em;
 }
 
+/* Agents Nav Styling */
+.agents-nav {
+  margin-top: 10px;
+}
+.agents-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.agents-nav ul li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.agents-nav ul li {
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.agents-nav-link {
+  text-decoration: none;
+  color: var(--primaryRed);
+}
+
+.agents-nav-active {
+  text-decoration: underline;
+  color: var(--primaryRed);
+}
 /* Agent List Styling */
 .agents-container {
-  font-family: 'Kanit', sans-serif;
   padding: 10px;
   display: flex;
 

@@ -25,7 +25,7 @@ const Agents = () => {
       agent.isPlayableCharacter && <AgentsList key={agent.uuid} {...agent} />
   );
 
-  return <main className='agents-container'>{agentsList}</main>;
+  return <section className='agents-container'>{agentsList}</section>;
 };
 
 export default Agents;
