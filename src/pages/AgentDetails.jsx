@@ -14,12 +14,27 @@ const AgentDetailsLayout = () => {
     }
   });
 
-  const { fullPortrait, displayName, description, abilities, voiceLine, role } =
-    currentAgentArr[0];
+  const {
+    fullPortrait,
+    displayName,
+    background,
+    description,
+    abilities,
+    voiceLine,
+    role,
+  } = currentAgentArr[0];
 
   return (
     <main className='agent-container'>
-      <img src={fullPortrait} alt={displayName} />
+      <div className='agent-images'>
+        <img
+          src={fullPortrait}
+          alt={displayName}
+          className='agent-full-portrait'
+        />
+        <img src={background} alt={displayName} className='agent-background' />
+      </div>
+
       <h2>{displayName}</h2>
       <div className='agent-role'>
         <h4>

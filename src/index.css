@@ -126,16 +126,32 @@ body {
   display: flex;
   flex-direction: column;
 }
-.agent-container > img {
-  display: block;
-  margin: 0 auto;
+
+.agent-images {
   width: 500px;
-  object-fit: contain;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+.agent-full-portrait {
+  margin: -10px auto;
+  width: 500px;
+  z-index: 2;
+  position: absolute;
+}
+.agent-background {
+  width: 500px;
+  z-index: 1;
+  margin-top: -50px;
 }
 
 .agent-container > h2 {
   text-align: center;
   font-size: 5em;
+  margin-top: -100px;
 }
 
 .agent-role {
