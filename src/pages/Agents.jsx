@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { AgentContext } from '../contexts/AgentsContext';
-import AgentsList from '../components/AgentsList';
+import AgentsList from '../components/Agents/AgentsList';
 import instance from '../axios';
 
 const Agents = () => {

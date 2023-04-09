@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
-import { AgentContext } from '../contexts/AgentsContext';
+import { AgentContext } from '../../contexts/AgentsContext';
 
 const AgentsNavBar = () => {
   const { agents } = useContext(AgentContext);
@@ -14,7 +14,6 @@ const AgentsNavBar = () => {
   }
 
   const sortedRolesArr = rolesArr.sort();
-  console.log(sortedRolesArr);
 
   const rolesLinks = sortedRolesArr.map((role, index) => (
     <li key={index}>
@@ -32,6 +31,7 @@ const AgentsNavBar = () => {
       <ul>
         <li>
           <NavLink
+            end
             to='/agents'
             className={({ isActive }) =>
               isActive ? 'agents-nav-active' : 'agents-nav-link'

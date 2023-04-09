@@ -77,24 +77,26 @@ body {
 /* Agent List Styling */
 .agents-container {
   padding: 10px;
+  justify-content: center;
   display: flex;
-
   align-items: center;
   flex-wrap: wrap;
-
   margin: 0 auto;
 }
-
+.agents-container a {
+  text-decoration: none;
+  color: black;
+}
 .agents-item {
   padding: 10px;
   background-color: var(--primaryGray);
   margin: 10px;
-  flex: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  width: 150px;
 }
 
 .agents-item-img {
@@ -113,4 +115,77 @@ body {
 .agents-item-content img {
   margin-left: 5px;
   width: 15px;
+}
+
+/* Agent Details */
+.agent-container {
+  background-color: var(--primaryGray);
+  max-width: 85vw;
+  min-height: 75vh;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+.agent-container > img {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  object-fit: contain;
+}
+
+.agent-container > h2 {
+  text-align: center;
+  font-size: 5em;
+}
+
+.agent-role {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+.agent-role h4 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.agent-role img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.role-type {
+  font-weight: 400;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+.agent-details {
+  padding: 0px 50px;
+}
+.agent-nav {
+  margin-top: 10px;
+}
+
+.agent-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.agent-nav ul li {
+  margin-left: 10px;
+  list-style: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.agent-content {
+  margin-top: 20px;
 }

@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import AgentsNavBar from '../components/AgentsNavBar';
+import AgentsNavBar from '../components/Agents/AgentsNavBar';
 import AgentContextProvider from '../contexts/AgentsContext';
 
 const AgentsLayout = () => {
