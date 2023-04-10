@@ -6,6 +6,7 @@ import AgentsLayout from './layouts/AgentsLayout';
 import AgentsByRole from './pages/AgentsByRole';
 import AgentDetails from './pages/AgentDetails';
 import Maps from './pages/Maps';
+import MapDetails from './components/Maps/MapDetails';
 import Weapons from './pages/Weapons';
 import './index.css';
 
@@ -23,7 +24,9 @@ const App = () => {
             </Route>
             <Route path=':roleType' element={<AgentsByRole />} />
           </Route>
-          <Route path='/maps' element={<Maps />} />
+          <Route path='maps' element={<Maps />} />
+          <Route path='maps/:name' element={<MapDetails />} />
+
           <Route path='/weapons' element={<Weapons />} />
         </Routes>
       </div>
