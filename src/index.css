@@ -205,3 +205,39 @@ body {
 .agent-content {
   margin-top: 20px;
 }
+
+/* Abilities Styling */
+.ability-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 0 20px 0;
+}
+
+.ability {
+  margin-bottom: 50px;
+  display: flex;
+}
+.ability-header {
+  display: block;
+  width: 90px;
+}
+
+.ability-header h4 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0;
+}
+.ability-header h3 {
+  font-size: 1.5em;
+  width: 150px;
+}
+
+.ability-icon {
+  width: 70px;
+  display: block;
+}
+.ability-content {
+  margin-left: 70px;
+  width: 400px;
+}
