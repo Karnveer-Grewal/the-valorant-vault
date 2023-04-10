@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const AgentsList = (props) => {
   const { displayIcon, displayName, role } = props;
-  console.log(displayName);
+
   return (
     <Link
       to={`/agents/details/${displayName.toLowerCase()}`}

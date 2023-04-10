@@ -31,11 +31,24 @@ const AgentDetailsNav = (props) => {
     <section className='agent-details'>
       <div className='agent-nav'>
         <ul>
-          <li onClick={() => handleChangeContent('description')}>
+          <li
+            onClick={() => handleChangeContent('description')}
+            className={isDescription ? 'active' : null}
+          >
             Description
           </li>
-          <li onClick={() => handleChangeContent('abilities')}>Abilities</li>
-          <li onClick={() => handleChangeContent('voiceline')}>Voiceline</li>
+          <li
+            onClick={() => handleChangeContent('abilities')}
+            className={isAbilities ? 'active' : null}
+          >
+            Abilities
+          </li>
+          <li
+            onClick={() => handleChangeContent('voiceline')}
+            className={isVoiceline ? 'active' : null}
+          >
+            Voiceline
+          </li>
         </ul>
       </div>
       <div className='agent-content'>
