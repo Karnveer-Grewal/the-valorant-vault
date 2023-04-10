@@ -209,9 +209,9 @@ body {
 /* Abilities Styling */
 .ability-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
-  padding: 0 0 20px 0;
+  padding: 0 10px 20px 10px;
 }
 
 .ability {
@@ -220,7 +220,8 @@ body {
 }
 .ability-header {
   display: block;
-  width: 90px;
+  width: 40px;
+  margin-right: 10px;
 }
 
 .ability-header h4 {
@@ -238,6 +239,6 @@ body {
   display: block;
 }
 .ability-content {
-  margin-left: 70px;
-  width: 400px;
+  margin-left: 110px;
+  width: 330px;
 }
